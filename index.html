@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop HTML/CSS A11Y</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main" id="main">Skip to main content</a>
+    <header role="banner">
+        <nav role="navigation">
+            <a href="#">Workshop A11Y</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The team</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" id="main" tabindex="-1">
+        <hgroup>
+            <h1>Welcome here</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                Non labore quam porro magnam recusandae fugiat.
+            </p>
+            <search role="search">
+                <form action="">
+                    <input type="search" name="search" aria-label="enter your search" placeholder="enter your search" >
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+        </hgroup>
+        <section class="full-bleed bg-100">
+            <h2>Meet the team</h2>
+            <ul class="list-horizontal">
+                <li>
+                    <img src="images/team/dale-whiteheart.png" alt="Dale Whiteheart">
+                    <h3>Dale Whiteheart</h3>       
+                </li>
+                <li>
+                    <img src="images/team/eloisa-pintz.png" alt="Eloisa Pintz">
+                    <h3>Eloisa Pintz</h3>       
+                </li>
+                <li>
+                    <img src="images/team/gregg-stawecki.png" alt="Gregg Stawecki">
+                    <h3>Gregg Stawecki</h3>       
+                </li>
+                <li>
+                    <img src="images/team/gaynelle-causey.png" alt="Gaynelle Causey">
+                    <h3>Gaynelle Causey</h3>       
+                </li>
+            </ul>
+            
+        </section>
+       
+        <section class="featured-posts">
+            <hgroup>
+                <h2>Featured posts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo, tempora velit eius quo,
+                    exercitationem, cumque expedita neque qui rerum fugiat quod maiores quas corrupti fuga quibusdam
+                    aspernatur ipsam ab.</p>
+            </hgroup>
+            <article>
+                <img src="images/posts/8byo_psa1_220426.jpg" alt="">
+                <h3 id="article-1">Enjoy boats transports</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae.
+                </p>
+                <a href="#" id="link-1" aria-labelledby="link-1 article-1">Read more</a>
+            </article>
+            <article>
+                <img src="images/posts/0f46533e-7b26-4243-91c5-93470e6be455.jpg" alt="">
+                <h3 id="article-2">A journey in the footsteps of history</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
+                    fugiat neque sit inventore.
+                </p>
+                <a href="#" id="link-2" aria-labelledby="link-2 article-2">Read more</a>
+            </article>
+            <article>
+                <img src="images/posts/3497263.jpg" alt="">
+                <h3 id="article-3">Bees and flowers</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
+                    fugiat neque sit inventore.
+                </p>
+                <a href="#" id="link-3" aria-labelledby="link-3 article-3">Read more</a>
+            </article>
+            <div class="full-bleed text-center">
+                <a href="#">Browse all posts</a>
+            </div>
+        </section>
+        <section class="full-bleed bg-100">
+            <h2>About us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae fugiat
+                neque sit inventore ea dicta ipsam facilis veniam obcaecati fugit deserunt est minus, nulla sequi.
+            </p>
+            <p>
+                Numquam iure autem nam at, nihil cupiditate
+                voluptatibus maxime voluptates error commodi iste, doloribus sequi maiores id modi quod earum iusto
+                saepe?
+                Omnis, maiores. Dicta ab nesciunt totam dolore voluptas dignissimos modi vel id reprehenderit excepturi
+                aperiam quibusdam obcaecati, accusamus, beatae quod incidunt. A vitae possimus quia. Eveniet laboriosam
+                aliquam magni qui?
+            </p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        © 2024 Wild Code School | Credits <a href="https://www.freepik.com/free-vector/sunny-egyptian-pyramids-oasis-scene_153696746.htm#fromView=search&page=1&position=43&uuid=849090c3-8aa7-48c7-aa12-bc5bd7d3585a" target="_blank">Image by brgfx</a> on Freepik  | <a href="#">Contact</a>
+    </footer>
+</body>
+
+</html>
